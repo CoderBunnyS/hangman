@@ -1,5 +1,5 @@
 const userName = document.getElementById("userName");
-const saveScoreButton = document.getElementById("saveScoreButton")
+const saveScoreButton = document.getElementById("saveScoreButton");
 const finalScore = document.getElementById("finalScore")
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 
@@ -12,21 +12,22 @@ const MAX_HIGH_SCORES = 5;
 
 finalScore.innerText = mostRecentScore
 
+//don't let the button be clicked before something is input
 userName.addEventListener("keyup", () => {
     saveScoreButton.disabled = !userName.value;
 })
-saveHighScore = e => {
+saveHighScore = (e) => {
 //    console.log("clicked the save button")
     e.preventDefault();
     const score = {
-        score: Math.floor(Math.random() * 100),
+        score: mostRecentScore,
         name: userName.value
     };
     highScores.push(score);
-
+//sort() sorts values as strings. Adding compare (below) compares values and sorts by value
     highScores.sort((a, b) => b.score - a.score);
     highScores.splice(5);
-
+//set high scores into localk storage by making string
     localStorage.setItem("highScores", JSON.stringify(highScores));
     window.location.assign("index.html")
     

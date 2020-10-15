@@ -15,7 +15,7 @@
         "choice3": "<script src='xxx.js'>",
         "choice4": "<script file='xxx.js'>",
         "answer": 3
-    }
+    },
     {
         "question": "Where is the correct place to link a JavaScript file?",
         "choice1": "the <head> section",
@@ -23,7 +23,7 @@
         "choice3": "The <body> section",
         "choice4": "None of the above",
         "answer": 3
-    }
+    },
     {
         "question": " How do you write 'Hello World' in an alert box?",
         "choice1": "msgBox('Hello World');",
@@ -31,7 +31,7 @@
         "choice3": "msg('Hello World');",
         "choice4": "alert('Hello World');",
         "answer": 4
-    }
+    },
     {
         "question": "How do you create a function in JavaScript?",
         "choice1": "function = myFunction();",
