@@ -6,6 +6,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: 0.1rem solid rgb(86, 165, 235, 0.25);
     background-color: white;
+    border-radius: 25px;
 }
 .choice-container:hover{
     cursor: pointer;
@@ -17,10 +18,12 @@
     padding: 1.5rem 2.5rem;
     background-color: #889aff;
     color: white;
+    border-radius: 25px;
 }
 .choice-text {
     padding: 1.5rem;
     width: 100%;
+    border-radius: 25px;
 }
 .correct {
     background-color: #28a745;
@@ -35,6 +38,7 @@
 #hud {
     display: flex;
     justify-content: space-between;
+    border-radius: 25px;
 
 }
 .hud-prefix {
@@ -50,12 +54,14 @@
     height: 4rem;
     border: 0.3rem solid #889aff;
     margin-top: 1.5rem;
+    border-radius: 25px;
 }
 
 #progressBarFull {
     height: 3.4rem;
     background-color: #889aff;
     width: 0%;
+    border-radius: 25px;
 }
 
  /*circle loading*/
