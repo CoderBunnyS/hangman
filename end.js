@@ -27,7 +27,7 @@ saveHighScore = (e) => {
 //sort() sorts values as strings. Adding compare (below) compares values and sorts by value
     highScores.sort((a, b) => b.score - a.score);
     highScores.splice(5);
-//set high scores into localk storage by making string
+//set high scores into local storage by making string
     localStorage.setItem("highScores", JSON.stringify(highScores));
     window.location.assign("index.html")
     
